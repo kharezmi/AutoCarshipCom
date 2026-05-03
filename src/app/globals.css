@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --muted: #64748b;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* TipTap (admin blog editor) */
+.tiptap-editor .ProseMirror {
+  min-height: 320px;
+  outline: none;
+}
+.tiptap-editor .ProseMirror p.is-editor-empty:first-child::before {
+  color: #94a3b8;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+.tiptap-editor .ProseMirror h2 {
+  @apply mt-8 font-heading text-2xl font-bold text-navy-900 first:mt-0;
+}
+.tiptap-editor .ProseMirror h3 {
+  @apply mt-6 font-heading text-xl font-semibold text-navy-900;
+}
+.tiptap-editor .ProseMirror p {
+  @apply mt-3 leading-relaxed;
+}
+.tiptap-editor .ProseMirror ul {
+  @apply mt-3 list-disc pl-6;
+}
+.tiptap-editor .ProseMirror ol {
+  @apply mt-3 list-decimal pl-6;
+}
+.tiptap-editor .ProseMirror blockquote {
+  @apply mt-4 border-l-4 border-amber-500 bg-amber-50/60 py-2 pl-4 pr-2 text-slate-700;
+}
+.tiptap-editor .ProseMirror img {
+  @apply my-6 max-h-[480px] w-auto max-w-full rounded-lg border border-slate-200 object-contain;
+}
+
+/* Sanitized HTML articles (public blog) */
+.blog-article-html h2 {
+  @apply mt-10 font-heading text-2xl font-bold text-navy-900 first:mt-0;
+}
+.blog-article-html h3 {
+  @apply mt-8 font-heading text-xl font-semibold text-navy-900;
+}
+.blog-article-html p {
+  @apply mt-4 leading-relaxed text-slate-700;
+}
+.blog-article-html ul {
+  @apply mt-4 list-disc space-y-2 pl-6 text-slate-700;
+}
+.blog-article-html ol {
+  @apply mt-4 list-decimal space-y-2 pl-6 text-slate-700;
+}
+.blog-article-html a {
+  @apply font-medium text-navy-800 underline decoration-amber-500 decoration-2 underline-offset-2;
+}
+.blog-article-html blockquote {
+  @apply mt-4 border-l-4 border-amber-500 bg-amber-50/60 py-2 pl-4 pr-2 text-slate-700;
+}
+.blog-article-html img {
+  @apply my-6 max-h-[520px] w-auto max-w-full rounded-lg border border-slate-200 object-contain;
+}
+.blog-article-html hr {
+  @apply my-10 border-slate-200;
+}
+.blog-article-html strong {
+  @apply font-semibold text-navy-900;
+}
