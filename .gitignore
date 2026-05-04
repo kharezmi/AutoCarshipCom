@@ -39,5 +39,6 @@ next-env.d.ts
 /public/blog-uploads/*
 !/public/blog-uploads/.gitkeep
 
-# Lead PII — created at runtime
+# Lead PII (created at runtime)
 /data/leads.json
+/data/promo-subscribers.json

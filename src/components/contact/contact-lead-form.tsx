@@ -179,7 +179,7 @@ export function ContactLeadForm() {
                 Send a lead to the desk
               </h2>
               <p className="mt-1 text-sm text-slate-600">
-                Step {step + 1} of 3 · {STEP_LABELS[step]}
+                Step {step + 1} of 3: {STEP_LABELS[step]}
               </p>
             </div>
             <div className="hidden shrink-0 rounded-full bg-amber-50 px-3 py-1.5 text-xs font-semibold text-amber-900 sm:block">
@@ -216,7 +216,7 @@ export function ContactLeadForm() {
                 <div className="space-y-6">
                   <p className="text-sm leading-relaxed text-slate-600">
                     We route this to the same coordinators who handle instant
-                    quotes—include a good phone window so we can reach you fast.
+                    quotes. Include a good phone window so we can reach you fast.
                   </p>
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div className="sm:col-span-2">
@@ -343,7 +343,7 @@ export function ContactLeadForm() {
               {step === 1 && (
                 <div className="space-y-6">
                   <p className="text-sm leading-relaxed text-slate-600">
-                    City and state or ZIP is enough—we&apos;ll confirm the full
+                    City and state or ZIP is enough. We&apos;ll confirm the full
                     addresses when we call back.
                   </p>
                   <div>
@@ -409,14 +409,14 @@ export function ContactLeadForm() {
                       Vehicle & timing
                     </Label>
                     <p className="mt-1 text-xs text-slate-500">
-                      Optional but recommended—trim, enclosed vs. open,
+                      Optional but recommended: trim, enclosed vs. open,
                       must-move dates, and lienholder contacts if any.
                     </p>
                     <textarea
                       id="notes"
                       rows={5}
                       className={textareaClass}
-                      placeholder="e.g. 2022 Subaru Outback · running · flexible pickup after Jan 15 · open carrier OK..."
+                      placeholder="e.g. 2022 Subaru Outback, running, flexible pickup after Jan 15, open carrier OK"
                       {...form.register("notes")}
                     />
                   </div>

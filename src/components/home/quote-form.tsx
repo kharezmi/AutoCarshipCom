@@ -378,12 +378,11 @@ export function QuoteForm() {
         >
           <CheckCircle2 className="h-16 w-16 text-emerald-500" />
           <p className="font-heading text-2xl font-bold text-[#1E3A8A]">
-            You&apos;re all set!
+            Request received
           </p>
           <p className="max-w-sm text-sm leading-relaxed text-slate-600">
-            We received your instant quote request. A coordinator will contact
-            you shortly with a binding rate. Questions? Call the number in the
-            header.
+            We have your quote request. Someone from the office will call or email with the next step. For urgent moves,
+            use the phone number at the top of the page.
           </p>
         </motion.div>
       ) : (
@@ -406,7 +405,7 @@ export function QuoteForm() {
                 AutoCarship LLC
               </h2>
               <p className="mt-1 text-sm text-slate-600">
-                Step {step + 1} of 4 · {STEPS[step]}
+                Step {step + 1} of 4: {STEPS[step]}
               </p>
             </div>
             <div className="hidden shrink-0 rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-800 sm:block">
@@ -442,10 +441,7 @@ export function QuoteForm() {
             >
               {step === 0 && (
                 <div className="space-y-6">
-                  <p className="text-sm text-slate-600">
-                    Enter ZIP codes or tap a suggestion from our lookup list for
-                    the fastest estimate.
-                  </p>
+                  <p className="text-sm text-slate-600">ZIP or city; suggestions fill in when you type.</p>
                   <div className="relative">
                     <Label
                       htmlFor="pickupLocation"
@@ -796,7 +792,7 @@ export function QuoteForm() {
                         ${estimatedTotal.toLocaleString()}
                       </p>
                       <p className="mt-1 text-xs text-slate-300">
-                        ~{miles?.toLocaleString()} mi · Non-binding until confirmed
+                        ~{miles?.toLocaleString()} mi. Not binding until confirmed.
                       </p>
                     </div>
                   )}

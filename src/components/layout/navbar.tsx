@@ -107,7 +107,7 @@ export function Navbar() {
                 className="mt-4 inline-block text-sm font-semibold text-amber-600 hover:text-amber-500"
                 onClick={() => setSvcOpen(false)}
               >
-                View all services →
+                View all services
               </Link>
             </MegaPanel>
           </div>
@@ -155,14 +155,14 @@ export function Navbar() {
                   className="text-sm font-semibold text-amber-600 hover:text-amber-500"
                   onClick={() => setVehOpen(false)}
                 >
-                  All manufacturers A-Z →
+                  All manufacturers A-Z
                 </Link>
                 <Link
                   href="/blogs"
                   className="text-sm font-semibold text-navy-800 hover:text-navy-900"
                   onClick={() => setVehOpen(false)}
                 >
-                  {"Shipping guides & blog →"}
+                  Shipping guides and blog
                 </Link>
               </div>
             </MegaPanel>
@@ -238,7 +238,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link href="/vehicles" className="pl-2 text-sm text-amber-700" onClick={closeAll}>
-              All makes A-Z →
+              All makes A-Z
             </Link>
             <Link href="/blogs" className={navLink} onClick={closeAll}>
               Blog

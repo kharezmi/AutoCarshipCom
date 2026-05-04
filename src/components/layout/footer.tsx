@@ -108,7 +108,7 @@ export function Footer() {
             </li>
           </ul>
           <p className="mt-6 text-xs text-slate-500">
-            Trusted transportation network across major U.S. shipping lanes.
+            We broker loads with motor carriers on lanes across the lower 48.
           </p>
           <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-slate-400">
             Partnered companies

@@ -1,6 +1,6 @@
 # Production image for AWS (EC2 / Lightsail / ECS / App Runner).
 # Build from repo root:  docker build -t autocarship-web ./web
-# Run (set env vars in the console or compose — never bake secrets into the image):
+# Run (set env vars in the console or compose; never bake secrets into the image):
 #   docker run -p 3000:3000 \
 #     -e RESEND_API_KEY=... \
 #     -e QUOTE_NOTIFY_EMAIL=... \

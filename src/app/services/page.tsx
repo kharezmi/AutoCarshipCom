@@ -106,8 +106,9 @@ export default function ServicesIndexPage() {
           Services
         </h1>
         <p className="mt-4 max-w-3xl text-lg text-slate-600">
-          AutoCarship LLC books vetted carriers for open moves, enclosed
-          protection, door-to-door coordination, exotics, and motorcycles.
+          AutoCarship LLC brokers open moves, enclosed trailers, door-to-door
+          pickup and delivery, high-value cars, and motorcycles with FMCSA-listed
+          motor carriers.
         </p>
 
         <div className="mt-12 max-w-3xl">
@@ -115,8 +116,7 @@ export default function ServicesIndexPage() {
             Sample pricing bands
           </h2>
           <p className="mt-2 text-sm text-slate-600">
-            Use these tables to sanity-check your quote. Actual totals depend on
-            equipment, season, and vehicle specifics.
+            Use these tables to compare with your quote. Final price depends on equipment, season, and vehicle details.
           </p>
           <div className="mt-6">
             <PricingTables />

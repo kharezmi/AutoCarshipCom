@@ -16,14 +16,13 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "open-auto-transport",
     title: "Open Auto Transport",
-    short:
-      "Industry-standard ramps with quick scheduling and strong lane coverage.",
+    short: "Open trailer. The usual choice for most cars and trucks.",
     description:
-      "Open carriers move the majority of consumer vehicles in the U.S. Your vehicle is secured with professional tie-downs and shipped alongside other cars on a multi-level trailer. AutoCarship LLC matches the trailer height, deck space, and tie-down plan to your chassis before a truck ever rolls to your curb.",
+      "Cars ride on a two-level open carrier with wheel straps. We book FMCSA-registered carriers and confirm your vehicle type and condition before assigning a truck.",
     highlights: [
-      "Best value for sedans, SUVs, and trucks",
-      "Frequent availability on popular lanes",
-      "Fully insured carriers in our network",
+      "Usually the lowest cost option",
+      "Easier to find trucks on busy lanes",
+      "Cargo insurance through the assigned carrier",
     ],
     heroImage: unsplashImage(
       "photo-1761917904658-2a9ecb84a169",
@@ -31,20 +30,20 @@ export const SERVICES: ServiceItem[] = [
     ),
     sections: [
       {
-        title: "How open transport actually works",
-        body: "Drivers load vehicles onto two-level racks using soft straps over the tires, never through the frame. The trailer stays balanced so crosswinds and bridge transitions stay predictable. We confirm running versus non-running status up front so the right liftgate or winch is on the truck before pickup day.",
+        title: "How open transport works",
+        body: "Drivers strap over the tires (not through the frame). We note running vs non-running up front so the truck has a liftgate or winch if needed.",
       },
       {
-        title: "Lanes where open shines",
-        body: "Dealer trades, relocation moves, and student cars dominate open bookings because the equipment is everywhere. Snowbird lanes, coast-to-coast corporate transfers, and metro-to-metro dealer swaps all stay cost-effective on open decks while still using vetted cargo policies.",
+        title: "When open makes sense",
+        body: "Daily drivers, dealer swaps, and most long-distance moves. Equipment is common on main lanes, so pricing and dates are usually easier than enclosed.",
         image: unsplashImage(
           "photo-1720127601642-7c3a7ba88f5f",
           "Semi truck on a multi-lane highway, representing busy auto transport lanes"
         ),
       },
       {
-        title: "When we still recommend enclosed",
-        body: "If you are moving a show car with fresh paint, a wide-body build with delicate aero, or a museum piece, enclosed may be worth the premium. Dispatch will quote both modes side by side so you can pick based on calendar and budget instead of guesswork.",
+        title: "When to consider enclosed instead",
+        body: "Fresh paint, very low cars, or high-value show cars often ride enclosed. We can quote open and enclosed side by side so you can compare.",
       },
     ],
     prepChecklist: {
@@ -61,9 +60,9 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "enclosed-transport",
     title: "Enclosed Transport",
-    short: "Maximum protection from weather and road debris.",
+    short: "Hard-sided trailer. Keeps weather and road spray off the car.",
     description:
-      "Enclosed trailers shield exotics, classics, and luxury vehicles from the elements. Hard sides keep rock chips off clear coat, and climate-stable rigs help sensitive finishes arrive the way they left. We prioritize single-level decks whenever height allows so loading angles stay gentle.",
+      "Enclosed moves suit luxury cars, classics, and anything you do not want on an open rack. We book carriers with the right ramp and strap setup for your ride height.",
     highlights: [
       "Soft straps and low-angle ramps on qualified fleets",
       "Recommended for paint-sensitive finishes",
@@ -75,20 +74,20 @@ export const SERVICES: ServiceItem[] = [
     ),
     sections: [
       {
-        title: "What you get with a hard-sided trailer",
-        body: "Walls block rain, snow, and road grit. E-track flooring lets crews position skates and soft ties without drilling into your frame. Many enclosed units also carry higher cargo limits, which matters when the vehicle value pushes insurance paperwork.",
+        title: "Hard-sided trailer",
+        body: "Sides and roof keep rain and grit off the paint. Tie-downs use the carrier’s E-track and soft straps. Declared value and insurance limits are checked before pickup.",
       },
       {
-        title: "Loading discipline for low cars",
-        body: "Low splitters and air suspension need measured approach angles. We send photos of the ramp setup when customers request them, and we refuse rushed tie-downs that could scuff side skirts. If a lift is required, we schedule it before the truck leaves the yard.",
+        title: "Low cars",
+        body: "Air suspension and low splitters need a shallow ramp angle. Tell us the ride height; we can send ramp photos on request or schedule extra clearance if needed.",
         image: unsplashImage(
           "photo-1776880258667-9efec18d59fb",
           "Enclosed trailer on a loading ramp for careful low-clearance loading"
         ),
       },
       {
-        title: "Pairing enclosed with tight calendars",
-        body: "Auction purchases, concours deadlines, and film fleet moves often need guaranteed windows. Dispatch blocks buffer days when weather threatens mountain passes and keeps backup drivers on standby for premium moves.",
+        title: "Tight dates",
+        body: "If you have a hard delivery date, say so when you book. We build in extra day where weather or distance warrants it.",
       },
     ],
     prepChecklist: {
@@ -105,14 +104,13 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "door-to-door-shipping",
     title: "Door-to-Door Shipping",
-    short:
-      "Pickup and delivery as close to your addresses as legally and safely possible.",
+    short: "Pickup and delivery at or near your addresses when the truck can access them.",
     description:
-      "Door-to-door means we fight for the closest legal handoff instead of forcing you into a remote terminal. Dispatch maps bridge heights, cul-de-sac turning radii, and city weight limits before assigning a truck. If a low-hanging oak branch or HOA rule blocks a 53-footer, we set a short meet point and still handle the paperwork.",
+      "We aim for your home or lot when width, weight, and HOA rules allow. If a 53-foot trailer cannot fit, we set a nearby meet point and keep one BOL chain where possible.",
     highlights: [
       "Residential and business locations supported",
       "Clear windows for pickup and delivery",
-      "Live updates when your shipment is active",
+      "Status updates while the load is active",
     ],
     heroImage: unsplashImage(
       "photo-1659536806369-0114c406a20d",
@@ -120,20 +118,20 @@ export const SERVICES: ServiceItem[] = [
     ),
     sections: [
       {
-        title: "What door-to-door really means",
-        body: "Carriers aim for your driveway, loading dock, or dealer lot. When a street is too narrow, the meet point might be a nearby big-box parking lot, but you still get a single bill of lading chain and the same driver team whenever possible.",
+        title: "What door-to-door means",
+        body: "Truck goes to your driveway, dock, or dealer when it is legal and safe. If the street is too tight, we use a short meet point and put it on the order.",
       },
       {
-        title: "Urban pickups without drama",
-        body: "City towers, gated communities, and downtown dealerships all need different staging plans. We collect photos of tight alleys, share them with the driver, and sometimes schedule early-morning pickups before traffic locks the lane.",
+        title: "City and gated pickups",
+        body: "Tall gates and narrow alleys need a plan. Send photos or gate rules early so the carrier knows before they dispatch.",
         image: unsplashImage(
           "photo-1777117414555-30ab86382f81",
           "Urban freeway and residential skyline, illustrating metro pickup coordination"
         ),
       },
       {
-        title: "Communication you can rely on",
-        body: "You get a dedicated coordinator who texts realistic ETA windows instead of vague day counts. If a previous stop runs long, we update both ends so nobody wastes a vacation day sitting curbside.",
+        title: "Communication",
+        body: "We give pickup and delivery windows in hours where we can, and update you if a prior stop runs long.",
       },
     ],
     prepChecklist: {
@@ -150,13 +148,13 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "exotic-luxury-car-shipping",
     title: "Exotic & Luxury Car Shipping",
-    short: "White-glove logistics for six- and seven-figure vehicles.",
+    short: "Enclosed moves for high-value and collector cars.",
     description:
-      "Lamborghini, Ferrari, McLaren, Rolls-Royce moves stay on enclosed equipment with veteran drivers and cargo limits that match the sticker price. We treat transport like a custody chain: verified pickup photos, sealed trailer logs when requested, and delivery only to named signers.",
+      "Exotics and luxury cars usually ship enclosed with experienced drivers. We verify insurance limits against declared value and name who can sign at delivery.",
     highlights: [
       "Single-level enclosed when available",
       "Route and clearance planning",
-      "Dedicated coordinator from booking to delivery",
+      "Same broker contact from booking through delivery",
     ],
     heroImage: unsplashImage(
       "photo-1770446722312-0fcf39b62900",
@@ -164,20 +162,20 @@ export const SERVICES: ServiceItem[] = [
     ),
     sections: [
       {
-        title: "Insurance limits that match the cargo",
-        body: "High-value loads need paperwork that matches reality. We collect declared value, review carrier certificates, and flag any gap before pickup day. If a carrier cannot meet the limit, we rotate the booking instead of hoping nothing happens.",
+        title: "Insurance and declared value",
+        body: "We collect declared value and check the carrier’s certificate before pickup. If limits do not match, we switch carriers rather than run underinsured.",
       },
       {
-        title: "Route planning beyond GPS",
-        body: "Low cars hate surprise construction plates. Dispatch reviews state DOT notices, weather windows, and hotel staging lots ahead of multi-day moves. Night driving through deer-heavy counties gets avoided when possible.",
+        title: "Route planning",
+        body: "Low cars need to avoid bad ramps and construction plates. Long moves may add buffer days for weather or mountain passes.",
         image: unsplashImage(
           "photo-1761868153234-ac1e23a1c653",
-          "Sports car delivered at a suburban home, emphasizing white-glove residential delivery"
+          "Sports car delivered at a suburban home"
         ),
       },
       {
-        title: "White-glove delivery standards",
-        body: "Inside delivery to a climate-controlled garage, lift-assisted unloading, and photo confirmation are all on the menu when facilities allow. If a manufacturer requires transport mode settings, we document them on the BOL.",
+        title: "Delivery options",
+        body: "Garage delivery, lift help, or extra photos can be arranged when the location allows. Special manufacturer transport steps go on the BOL.",
       },
     ],
     prepChecklist: {
@@ -194,9 +192,9 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "motorcycle-shipping",
     title: "Motorcycle Shipping",
-    short: "Cradles, chocks, and careful handling for two wheels.",
+    short: "Pallet, crate, or motorcycle slot on a qualified trailer.",
     description:
-      "From Harleys to sport bikes, motorcycles are secured in pallets, crates, or dedicated motorcycle slots on specialized trailers. We ask about fairings, lowered suspensions, and aftermarket exhausts so the crate or chock setup matches the bike instead of bending a lever.",
+      "We ship cruisers and sport bikes strapped in chocks or crated for long hauls. Tell us about lowered suspension, wide fairings, and exhaust so the setup fits.",
     highlights: [
       "Open and enclosed motorcycle options",
       "Crated shipping for maximum protection on long hauls",
@@ -208,20 +206,20 @@ export const SERVICES: ServiceItem[] = [
     ),
     sections: [
       {
-        title: "Open vs crated motorcycle moves",
-        body: "Open pallet moves work well for short regional hops when weather is stable. Crated or palletized service adds labor up front but shields fairings on cross-country hauls. We explain both price points before you commit.",
+        title: "Open vs crated",
+        body: "Short regional moves often go open on a pallet. Cross-country or winter moves may use a crate. We quote both when you ask.",
       },
       {
-        title: "Strapping that respects controls",
-        body: "Soft ties keep pressure off grips and levers. If a bike cannot roll because of a dead battery, we note winch points that will not scar chrome. Side stands stay up only when chocks allow; otherwise we keep the bike vertical with bar harnesses.",
+        title: "Tie-downs",
+        body: "Soft ties on bars or frames per carrier practice. Non-running bikes need winch points noted in advance.",
         image: unsplashImage(
           "photo-1753563820285-113b135c54fd",
           "Motorcycle staged next to its trailer for tie-down and wheel chock prep"
         ),
       },
       {
-        title: "Residential pickup realities",
-        body: "Steep driveways and gravel turns can block pallet jacks. Dispatch may ask for a meet at a paved lot a few miles away. That small change keeps your frame straight and keeps the carrier on schedule for the rest of the load.",
+        title: "Residential pickup",
+        body: "Steep or unpaved driveways may need a meet on flat pavement nearby.",
         image: unsplashImage(
           "photo-1758846183017-6ea8242b5dfc",
           "Narrow residential driveway between homes where a transport truck may need a meet point"

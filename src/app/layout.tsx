@@ -3,6 +3,9 @@ import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { PromoLeadModal } from "@/components/marketing/promo-lead-modal";
+import { ReviewToast } from "@/components/marketing/review-toast";
+import { CrispLiveChat } from "@/components/marketing/crisp-live-chat";
 import { OrganizationJsonLd } from "@/components/seo/organization-json-ld";
 import { COMPANY, SITE_URL } from "@/lib/constants";
 import { absoluteUrl, clipMeta } from "@/lib/metadata";
@@ -30,7 +33,7 @@ const defaultOgDescription = clipMeta(
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${COMPANY.name} | Nationwide auto transport`,
+    default: `${COMPANY.name} | Nationwide auto transport broker`,
     template: `%s`,
   },
   description: defaultOgDescription,
@@ -47,7 +50,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `${COMPANY.name} | Nationwide auto transport`,
+    title: `${COMPANY.name} | Nationwide auto transport broker`,
     description: defaultOgDescription,
     url: absoluteUrl("/"),
     siteName: COMPANY.name,
@@ -64,7 +67,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${COMPANY.name} | Nationwide auto transport`,
+    title: `${COMPANY.name} | Nationwide auto transport broker`,
     description: defaultOgDescription,
     images: [DEFAULT_OG_IMAGE],
   },
@@ -82,6 +85,9 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <PromoLeadModal />
+        <ReviewToast />
+        <CrispLiveChat />
       </body>
     </html>
   );

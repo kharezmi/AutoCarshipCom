@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { canonicalAndSocial, clipMeta, pageTitle } from "@/lib/metadata";
+import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: pageTitle("Privacy Policy"),
@@ -103,9 +104,9 @@ export default function PrivacyPage() {
         <p>If you have questions about this Privacy Policy, please contact:</p>
         <p>Auto Car Ship LLC</p>
         <p>
-          6023 Ruby Way,
+          {COMPANY.addressLine}
           <br />
-          Nine Mile Falls, WA 99026
+          {COMPANY.cityStateZip}
         </p>
       </div>
     </div>

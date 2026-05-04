@@ -19,30 +19,30 @@ export type VehicleMake = {
 const template = (brand: string, slug: string): VehicleMake => ({
   slug,
   label: brand,
-  headline: `${brand} transport from driveway to driveway`,
-  body: `Shipping a ${brand} requires careful loading, secure tie-downs, and experienced drivers. AutoCarship LLC coordinates enclosed and open carriers nationwide, with transparent pricing and proactive updates from pickup through delivery.`,
+  headline: `${brand} shipping (open or enclosed)`,
+  body: `We broker ${brand} moves on insured motor carriers. Tell us year, model, running condition, and any lift or low clearance so the truck matches the car.`,
   bullets: [
-    `Low-clearance and performance ${brand} models handled with soft straps and liftgate when needed`,
-    "Dispatch picks up the phone and talks through the lane, no scripted kiosk",
-    "Optional enclosed transport for maximum protection",
+    `Soft straps and liftgate when the carrier needs them for your ${brand}`,
+    "Call dispatch if the pickup or drop is tight. We walk through it with you.",
+    "Enclosed available when you want the car inside a trailer",
   ],
   heroImage: OPEN_CARRIER,
   sections: [
     {
-      title: `Why ${brand} owners book dedicated transport`,
-      body: `${brand} builds vary widely in ride height, wheel offset, and bumper design. We capture those details in the quote so the carrier arrives with the right ramps, deck spacing, and strap plan instead of improvising on your curb.`,
+      title: `Quoting your ${brand}`,
+      body: `Ride height, wheels, and bumpers change how a truck loads. Put mods in the quote so the carrier brings the right ramp and deck space.`,
     },
     {
-      title: `Loading discipline for ${brand} sheet metal`,
-      body: `Door dings and rocker scrapes usually trace back to rushed staging. Our network favors soft ties, mirror blankets, and staged photos at pickup when you request them. If your ${brand} is lowered, say so up front so we block a lift-friendly window.`,
+      title: `Loading`,
+      body: `Soft ties and mirror blankets are standard on many fleets. Ask for pickup photos if you want them. Lowered ${brand}: say so when you book.`,
       image: unsplashImage(
         "photo-1492144534655-ae79c964c9d7",
         `Side profile of a ${brand} vehicle showing body lines`
       ),
     },
     {
-      title: "Paperwork that keeps insurance aligned",
-      body: "Declared value, lienholder contacts, and running condition notes all ride on the bill of lading. We audit those fields before dispatch so a carrier cannot claim ignorance if something is off-spec at delivery.",
+      title: "Paperwork",
+      body: "Declared value, lienholder, and running condition go on the BOL. We check those fields before the truck rolls.",
     },
   ],
 });
@@ -51,12 +51,12 @@ export const VEHICLE_MAKES: VehicleMake[] = [
   {
     slug: "tesla",
     label: "Tesla",
-    headline: "Tesla shipping with EV-ready carriers nationwide",
-    body: "Electric vehicles need carriers who understand battery safety, low ground clearance, and manufacturer transport mode steps. We route Teslas on vetted fleets with the right equipment and insurance limits for high-value EVs.",
+    headline: "Tesla transport (EV loading requirements)",
+    body: "Teslas need transport mode set per the screen menu, normal battery range for weight, and clearance for low air suspension. We book carriers used to EVs.",
     bullets: [
       "Open or enclosed options for Model 3, Y, S, X and Cybertruck",
-      "Clear communication on pickup windows at charging-friendly locations",
-      "Expedited options when you need the vehicle moved fast",
+      "Pickup windows discussed around charger cables and garage clearance",
+      "Rush moves when equipment is open on your lane",
     ],
     heroImage: unsplashImage(
       "photo-1593941707882-a5bba14938c7",
@@ -64,20 +64,20 @@ export const VEHICLE_MAKES: VehicleMake[] = [
     ),
     sections: [
       {
-        title: "Transport mode and battery prep",
-        body: "Tesla’s transport mode limits motor torque and keeps the suspension from cycling unpredictably. Share the latest steps from your touchscreen menu so the driver can enable them before rolling onto the deck. Keep charge between roughly twenty and eighty percent unless we specify otherwise for weight.",
+        title: "Transport mode and battery",
+        body: "Follow the on-screen steps for transport mode before loading. Keep charge in a normal daily range unless we tell you otherwise for weight on the deck.",
       },
       {
-        title: "Pickup at apartments, offices, or chargers",
-        body: "Urban towers and tight garages often need a short roll to a staging lot. We coordinate with building security, map charger cables out of the way, and photograph the walk-around while the car is still on level pavement.",
+        title: "Pickup locations",
+        body: "Garages and chargers sometimes need a short move to a lot where a carrier can load. We note gate codes and cable clearance in the order.",
         image: unsplashImage(
           "photo-1469854523086-cc02fe5d8800",
-          "Open highway through wide-open landscape at golden hour"
+          "Highway driving scene"
         ),
       },
       {
-        title: "Cybertruck and large footprint loads",
-        body: "Wide stainless bodies need extra mirror clearance on narrow ramps. Tell us about wheel caps, aero covers, and aftermarket lifts so we reserve deck space that clears the fenders without rubbing neighboring units.",
+        title: "Cybertruck and wide trucks",
+        body: "List wheel caps, covers, and any lift. We need width and height for deck placement.",
       },
     ],
   },
@@ -109,8 +109,8 @@ export const VEHICLE_MAKES: VehicleMake[] = [
         ),
       },
       {
-        title: "Classic BMW coupes",
-        body: "Older chassis often need softer suspension travel. We match those cars with drivers who still carry wheel bonnets and who know how to baby unibody cars without grabbing control arms.",
+        title: "Older BMW coupes",
+        body: "Older cars often need softer tie-downs and wheel bonnets. Tell us if the suspension is stock or lowered.",
       },
     ],
   },
@@ -157,7 +157,7 @@ export const VEHICLE_MAKES: VehicleMake[] = [
     body: "Mercedes vehicles often benefit from enclosed transport for paint and trim protection. We also move daily drivers on open carriers at competitive rates.",
     bullets: [
       "Enclosed recommended for S-Class, AMG GT, and G-Wagen builds",
-      "White-glove scheduling for narrow delivery windows",
+      "Tight delivery windows noted on the order when you have them",
       "Nationwide dealer and relocation coordination",
     ],
     heroImage: unsplashImage(
@@ -187,8 +187,8 @@ export const VEHICLE_MAKES: VehicleMake[] = [
   {
     slug: "porsche",
     label: "Porsche",
-    headline: "Porsche transport with performance-first handling",
-    body: "Low ride heights and wide bodies demand the right ramps and clearance. We prioritize enclosed carriers for Porsche sports cars and track builds.",
+    headline: "Porsche shipping (low clearance)",
+    body: "Low cars need the right ramp angle. Sports models usually ship enclosed; SUVs can go open if you prefer.",
     bullets: [
       "Enclosed-first routing for 911, Cayman, and Boxster",
       "Liftgate and winch support for inoperable project cars when arranged in advance",
@@ -201,11 +201,11 @@ export const VEHICLE_MAKES: VehicleMake[] = [
     sections: [
       {
         title: "911 and mid-engine clearance",
-        body: "Long tails and winged GT cars need measured approach angles. We pair those builds with trailers that offer extended ramps or hydraulic tilts so the nose never kisses the deck.",
+        body: "Long tails and big wings need a shallow ramp. We book trailers with extended ramps or tilt decks when the job needs it.",
       },
       {
-        title: "Track pads and splitter care",
-        body: "If you are shipping straight from a track day, mention aggressive brake pads or sticky tires so the driver avoids smoking the trailer winch. We also cover splitter wood blocks when low approaches are unavoidable.",
+        title: "Track pads and splitters",
+        body: "After track use, mention aggressive pads or sticky tires. Low splitters may need wood blocks on the ramp.",
         image: unsplashImage(
           "photo-1492144534655-ae79c964c9d7",
           "Vehicle profile highlighting aerodynamic body lines"
@@ -221,11 +221,11 @@ export const VEHICLE_MAKES: VehicleMake[] = [
     slug: "lamborghini",
     label: "Lamborghini",
     headline: "Exotic & Lamborghini enclosed transport",
-    body: "Exotics ship enclosed with soft ties, minimal angle ramps, and drivers who specialize in supercars. Expect white-glove timing and premium insurance verification.",
+    body: "Exotics usually move enclosed with soft ties and low-angle ramps. Insurance and declared value are checked before pickup.",
     bullets: [
       "Single-level enclosed trailers preferred",
       "Route planning for ground clearance",
-      "Dedicated support from quote to delivery",
+      "Broker staff on the phone through delivery",
     ],
     heroImage: unsplashImage(
       "photo-1503376780353-7e6692767b70",
@@ -246,7 +246,7 @@ export const VEHICLE_MAKES: VehicleMake[] = [
       },
       {
         title: "Insurance stacks and declared value",
-        body: "Seven-figure cars need seven-figure paperwork. We triple-check certificates, deductibles, and lienholder clauses before the rig leaves. No surprises at delivery.",
+        body: "High-dollar cars need matching insurance paperwork. We check certificates, deductibles, and lienholder clauses before pickup.",
       },
     ],
   },
@@ -271,7 +271,7 @@ export const VEHICLE_MAKES: VehicleMake[] = [
       },
       {
         title: "Softail and Sportster loads",
-        body: "Lighter bikes often move on shared motorcycle trailers with multiple chocks. We still isolate each unit with bar harnesses so a neighbor’s leak never drips on your tank.",
+        body: "Lighter bikes often share a trailer with several chocks. Each bike gets its own tie-downs so fluids from one unit do not get on yours.",
         image: unsplashImage(
           "photo-1558618666-fcd25c85cd64",
           "Motorcycle touring on a scenic highway"
@@ -302,29 +302,29 @@ export function genericMake(slug: string): VehicleMake {
     slug,
     label,
     headline: `${label} auto transport nationwide`,
-    body: `AutoCarship LLC moves ${label} vehicles across the United States on vetted open and enclosed carriers. Share your pickup and delivery locations for an instant estimate, then lock in dates with our dispatch team.`,
+    body: `AutoCarship LLC brokers ${label} shipments on open and enclosed motor carriers. Use the quote form for a ballpark, then we confirm dates and carrier with you by phone or email.`,
     bullets: [
       "Online quote intake with no obligation to book",
-      "Licensed logistics coordination with insured carriers",
+      "Licensed broker coordination with insured motor carriers",
       "Tracking portal updates when your order is active",
     ],
     heroImage: OPEN_CARRIER,
     sections: [
       {
-        title: `Nationwide ${label} coverage`,
-        body: `Whether you bought a ${label} out of state or you are moving for work, we quote the lane with the same detail we use for flagship brands. Tell us about aftermarket wheels, roof tents, or suspension lifts so equipment matches reality.`,
+        title: `Nationwide ${label} moves`,
+        body: `Out-of-state purchase or relocation: we quote the lane the same way as any other make. List wheels, roof rack, lift kit, or tent so the truck fits.`,
       },
       {
-        title: "Photo-ready inspections",
-        body: "We recommend daylight photos at pickup and delivery. Those shots protect both sides if weather or road debris becomes a question later.",
+        title: "Inspection photos",
+        body: "Daylight photos at pickup and delivery help if there is a damage question later.",
         image: unsplashImage(
           "photo-1486262715619-67b85e0b08d3",
           "Open road stretching through the countryside at golden hour"
         ),
       },
       {
-        title: "Switching to enclosed mid-quote",
-        body: "If you start on open pricing and later decide you want enclosed, we rebuild the quote instead of tacking on mystery fees. The goal is an apples-to-apples comparison.",
+        title: "Switching open to enclosed",
+        body: "If you change trailer type, we re-quote with the new mode so pricing stays clear.",
       },
     ],
   };

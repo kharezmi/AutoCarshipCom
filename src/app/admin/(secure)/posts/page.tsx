@@ -42,8 +42,10 @@ export default async function AdminPostsPage() {
                     <span className="text-emerald-700">Published</span>
                   ) : (
                     <span className="text-amber-700">Draft</span>
-                  )}{" "}
-                  · Updated {new Date(p.updatedAt).toLocaleDateString()}
+                  )}
+                  <span className="text-slate-500">
+                    . Updated {new Date(p.updatedAt).toLocaleDateString()}
+                  </span>
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">

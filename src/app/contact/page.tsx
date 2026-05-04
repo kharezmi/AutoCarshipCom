@@ -7,7 +7,7 @@ import { Phone, Mail, MapPin, Clock3 } from "lucide-react";
 export const metadata: Metadata = {
   title: pageTitle("Contact"),
   description: clipMeta(
-    `${COMPANY.name} answers vehicle shipping quotes, fleet coordination, and live orders. Nine Mile Falls, WA. Phone ${COMPANY.phone}. ${COMPANY.hours}.`,
+    `${COMPANY.name} answers vehicle shipping quotes, fleet coordination, and live orders. ${COMPANY.cityStateZip}. Phone ${COMPANY.phone}. ${COMPANY.hours}.`,
     160
   ),
   ...canonicalAndSocial(
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   const mapSrc =
-    "https://maps.google.com/maps?q=6023+Ruby+Way+Nine+Mile+Falls+WA+99026&hl=en&z=15&output=embed";
+    "https://maps.google.com/maps?q=18110+US-27+Lake+Wales+FL+33859&hl=en&z=15&output=embed";
 
   return (
     <div className="bg-surface">

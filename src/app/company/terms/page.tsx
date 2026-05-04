@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { canonicalAndSocial, clipMeta, pageTitle } from "@/lib/metadata";
+import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: pageTitle("Terms and Conditions"),
@@ -222,9 +223,9 @@ export default function TermsPage() {
         </h2>
         <p>Auto Car Ship LLC (a registered trade name of Auto Haul Express LLC)</p>
         <p>
-          6023 Ruby Way,
+          {COMPANY.addressLine}
           <br />
-          Nine Mile Falls, WA 99026
+          {COMPANY.cityStateZip}
         </p>
       </div>
     </div>

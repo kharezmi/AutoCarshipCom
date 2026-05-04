@@ -67,8 +67,7 @@ export default function FaqPage() {
       <div className="mx-auto max-w-3xl px-4 py-14 lg:px-6 lg:py-20">
         <h1 className="font-heading text-4xl font-bold text-navy-900">FAQ</h1>
         <p className="mt-3 text-slate-600">
-          Answers for shippers working with {COMPANY.name}. This FAQ also emits
-          structured data for Google rich results.
+          Common questions for people booking through {COMPANY.name}.
         </p>
         <Accordion type="single" collapsible className="mt-10 w-full">
           {faqs.map((f, i) => (

@@ -4,8 +4,11 @@ import { HowItWorks } from "@/components/home/how-it-works";
 import { ServicesStrip } from "@/components/home/services-strip";
 import { WhyChooseUs } from "@/components/home/why-choose";
 import { PartneredCompanies } from "@/components/home/partnered-companies";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { HomeNextSteps } from "@/components/home/home-next-steps";
+import { HomeComparison } from "@/components/home/home-comparison";
+import { HomePricingBands } from "@/components/home/home-pricing-bands";
+import { HomeSocialProof } from "@/components/home/home-social-proof";
+import { HomeFinalCta } from "@/components/home/home-final-cta";
 import { COMPANY } from "@/lib/constants";
 import { canonicalAndSocial, clipMeta } from "@/lib/metadata";
 
@@ -14,7 +17,7 @@ const homeTitle = `${COMPANY.name} | Nationwide vehicle shipping quotes`;
 export const metadata: Metadata = {
   title: homeTitle,
   description: clipMeta(
-    `Nationwide open and enclosed vehicle shipping with WA-based dispatch. Phone ${COMPANY.phone}. ${COMPANY.dot}; ${COMPANY.mc}. ${COMPANY.hours}.`,
+    `Licensed auto transport broker: open and enclosed nationwide. Phone ${COMPANY.phone}. ${COMPANY.dot}; ${COMPANY.mc}. ${COMPANY.fmcsa}. ${COMPANY.hours}.`,
     160
   ),
   ...canonicalAndSocial(
@@ -29,27 +32,14 @@ export default function HomePage() {
     <>
       <Hero />
       <ServicesStrip />
+      <HomeNextSteps />
       <HowItWorks />
+      <HomeComparison />
+      <HomePricingBands />
       <WhyChooseUs />
+      <HomeSocialProof />
       <PartneredCompanies />
-      <section className="bg-navy-900 py-16 text-center text-white lg:py-20">
-        <div className="mx-auto max-w-3xl px-4">
-          <h2 className="font-heading text-3xl font-bold sm:text-4xl">
-            Ready when you are
-          </h2>
-          <p className="mt-3 text-slate-200">
-            Get a quote online or speak with a logistics coordinator today.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Button asChild size="lg">
-              <a href="/#instant-quote">Start instant quote</a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-white/40 bg-transparent text-white hover:bg-white/10">
-              <Link href="/contact">Contact us</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <HomeFinalCta />
     </>
   );
 }

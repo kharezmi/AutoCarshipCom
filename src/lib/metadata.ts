@@ -22,7 +22,7 @@ export function absoluteUrl(path: string = "/") {
 
 /** Full `<title>` value. Root layout uses `template: \"%s\"` so this is emitted verbatim. */
 export function pageTitle(segment: string) {
-  return `${segment} | ${COMPANY.name} | Nationwide auto transport`;
+  return `${segment} | ${COMPANY.name} | Nationwide auto transport broker`;
 }
 
 /** Canonical URL + Open Graph + Twitter defaults for generic marketing routes. */

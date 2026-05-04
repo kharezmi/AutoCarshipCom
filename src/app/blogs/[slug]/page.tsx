@@ -102,7 +102,7 @@ export default function BlogArticlePage({ params }: Props) {
           </p>
           <p className="mt-6 text-sm text-slate-500">
             <span className="font-medium text-slate-700">{post.author}</span>
-            {" · "}
+            {", "}
             <time dateTime={post.publishedAt}>
               {new Date(post.publishedAt).toLocaleDateString(undefined, {
                 year: "numeric",
@@ -112,7 +112,7 @@ export default function BlogArticlePage({ params }: Props) {
             </time>
             {post.updatedAt !== post.publishedAt && (
               <>
-                {" · "}
+                {". "}
                 Updated{" "}
                 <time dateTime={post.updatedAt}>
                   {new Date(post.updatedAt).toLocaleDateString()}

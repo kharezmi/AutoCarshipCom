@@ -26,7 +26,7 @@ export default async function AdminSecureLayout({
               Leads
             </Link>
             <Link href="/blogs" className="font-normal text-slate-600 hover:text-navy-900">
-              View blog →
+              View blog
             </Link>
           </div>
           <form action={adminLogout}>

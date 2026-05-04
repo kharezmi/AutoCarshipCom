@@ -13,7 +13,7 @@ function isQuoteData(
 function leadSummary(lead: StoredLead): string {
   if (isQuoteData(lead)) {
     const d = lead.data;
-    return `${d.originZip} to ${d.destZip} · ${d.vehicleYear} ${d.vehicleMake} ${d.vehicleModel}`;
+    return `${d.originZip} to ${d.destZip}, ${d.vehicleYear} ${d.vehicleMake} ${d.vehicleModel}`;
   }
   const d = lead.data as ContactLeadData;
   return `${d.origin} to ${d.destination}`;

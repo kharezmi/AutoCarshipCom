@@ -23,9 +23,9 @@ export function OrganizationJsonLd() {
         address: {
           "@type": "PostalAddress",
           streetAddress: COMPANY.addressLine,
-          addressLocality: "Nine Mile Falls",
-          addressRegion: "WA",
-          postalCode: "99026",
+          addressLocality: "Lake Wales",
+          addressRegion: "FL",
+          postalCode: "33859",
           addressCountry: "US",
         },
         openingHoursSpecification: [

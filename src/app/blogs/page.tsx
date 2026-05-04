@@ -50,8 +50,9 @@ export default function BlogsIndexPage() {
                       year: "numeric",
                       month: "short",
                       day: "numeric",
-                    })}{" "}
-                    · Read article →
+                    })}
+                    <span className="text-slate-500">. </span>
+                    Read article
                   </p>
                 </Link>
               </li>

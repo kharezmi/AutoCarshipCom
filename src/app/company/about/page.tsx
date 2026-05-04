@@ -7,13 +7,13 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: pageTitle("About us"),
   description: clipMeta(
-    `About ${COMPANY.name}: nationwide auto logistics, partner carrier network, and Nine Mile Falls operations office.`,
+    `About ${COMPANY.name}: nationwide auto transport broker, Lake Wales, FL office, FMCSA licensed.`,
     160
   ),
   ...canonicalAndSocial(
     "/company/about",
     pageTitle("About us"),
-    `${COMPANY.name} publishes clear lane guidance, bonded carrier onboarding, and real dispatch coverage from Washington State.`
+    `${COMPANY.name} is a licensed Florida broker: quotes, carrier assignment, dispatch.`
   ),
 };
 
@@ -25,18 +25,17 @@ export default function AboutPage() {
           About {COMPANY.name}
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-slate-700">
-          We started {COMPANY.name} to deliver clear pricing, reliable pickup
-          windows, and consistent communication for every shipment. Our team
-          supports private owners, relocation customers, and dealerships with
-          nationwide open and enclosed transport options.
+          {COMPANY.name} is an auto transport broker in Lake Wales, FL. We set up
+          moves between customers and FMCSA-registered trucking companies, open or
+          enclosed, residential or dealer. Private owners and dealers use us for
+          one-off cars and small batches.
         </p>
         <h2 className="mt-12 font-heading text-2xl font-bold text-navy-900">
           Mission
         </h2>
         <p className="mt-3 text-slate-700 leading-relaxed">
-          Make vehicle logistics as straightforward as booking a flight: honest
-          quotes, accountable dispatchers, and technology that keeps shippers
-          informed without replacing human judgment.
+          Straight quotes, paperwork that matches the truck, and someone on the
+          phone when the schedule slips.
         </p>
         <h2 className="mt-12 font-heading text-2xl font-bold text-navy-900">
           Headquarters
