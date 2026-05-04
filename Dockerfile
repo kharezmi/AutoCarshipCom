@@ -1,12 +1,12 @@
 # Production image for AWS (EC2 / Lightsail / ECS / App Runner).
-# Build from repo root:  docker build -t autocarship-web ./web
-# Run (set env vars in the console or compose; never bake secrets into the image):
-#   docker run -p 3000:3000 \
-#     -e RESEND_API_KEY=... \
-#     -e QUOTE_NOTIFY_EMAIL=... \
-#     -e RESEND_FROM_EMAIL="AutoCarShip <onboarding@resend.dev>" \
-#     -e NEXT_PUBLIC_SITE_URL=https://your-demo-url \
-#     autocarship-web
+# Build from repo root (NEXT_PUBLIC_* must be set at build time for Next.js client bundle):
+#   docker build -t autocarship-new ./web \
+#     --build-arg NEXT_PUBLIC_SITE_URL=https://your-domain \
+#     --build-arg NEXT_PUBLIC_CRISP_WEBSITE_ID=your-crisp-uuid
+# Run (secrets at runtime only; do not bake API keys into the image):
+#   docker run -d -p 80:3000 --restart unless-stopped \
+#     -e RESEND_API_KEY=... -e QUOTE_NOTIFY_EMAIL=... \
+#     --name autocarship autocarship-new
 
 FROM node:20-alpine AS base
 
@@ -21,6 +21,11 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
+# Next.js inlines NEXT_PUBLIC_* at `next build`; runtime `docker run -e` is too late for the browser bundle.
+ARG NEXT_PUBLIC_SITE_URL=
+ARG NEXT_PUBLIC_CRISP_WEBSITE_ID=
+ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
+ENV NEXT_PUBLIC_CRISP_WEBSITE_ID=$NEXT_PUBLIC_CRISP_WEBSITE_ID
 RUN npm run build
 
 FROM base AS runner
